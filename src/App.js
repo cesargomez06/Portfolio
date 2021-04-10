@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { createMuiTheme, makeStyles, MuiThemeProvider } from "@material-ui/core";
+import { purple } from "@material-ui/core/colors";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import MiWork from "./components/MyWork";
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {main: purple[500]},
+    secondary: {main:"#333"},
+  }
+})
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <div className={classes.root}>
+        <Navbar />
+        <About title="About Me" id="about" dark={true}/>
+        <Skills title="My Coding Journey"id="skills" dark={false}/>
+        <MiWork title=" My Work" id="work" dark={true}/>
+        <Contact title="Get in touch" id="contact" dark={false} />
+      </div>
+    </MuiThemeProvider>
+    
   );
 }
+
+const useStyles = makeStyles((theme)=> ({
+  root: {
+
+  }
+}))
 
 export default App;
