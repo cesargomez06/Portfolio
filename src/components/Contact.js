@@ -1,6 +1,5 @@
 import { Button, makeStyles, Paper, Radio, TextField, Typography } from '@material-ui/core';
-import { purple } from '@material-ui/core/colors';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const Contact = ({title, dark, id}) => {
     const classes = useStyles();
