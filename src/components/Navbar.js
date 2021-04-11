@@ -1,6 +1,6 @@
 import { AppBar, List, makeStyles, Toolbar, IconButton, Drawer, Divider, ListItem, ListItemIcon } from '@material-ui/core';
 import React from 'react'
-import logo  from "../images/logo.png"
+import logo  from "../images/logoweb.png"
 import {Link, animateScroll as scroll} from "react-scroll"
 import  InfoTwoToneIcon  from '@material-ui/icons/InfoTwoTone'
 import EmojiObjectsTwoToneIcon from "@material-ui/icons/EmojiObjectsTwoTone"
