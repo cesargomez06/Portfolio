@@ -1,4 +1,5 @@
 import { Button, makeStyles, Paper, Radio, TextField, Typography } from '@material-ui/core';
+import { CenterFocusStrong } from '@material-ui/icons';
 import React, { useState } from 'react';
 
 const Contact = ({title, dark, id}) => {
@@ -11,7 +12,7 @@ const Contact = ({title, dark, id}) => {
     return (
         <div className={`${classes.section} ${dark && classes.sectiondark}`}>
             <div className={classes.sectioncontent} id={id} > 
-                <Typography variant="h3">{title}</Typography>
+                <Typography variant="h4">{title}</Typography>
                 <Paper className={classes.root}>
                     <div className={classes.titleandchoices}>
                         <Typography variant="h5">CONTACT ME</Typography>
@@ -89,6 +90,9 @@ const useStyles = makeStyles((theme)=> ({
     },
     sectioncontent: {
        maxWidth:"80vw",
+       margin:"0 auto",
+        padding:theme.spacing(5),
+        textAlign:"center",
     },
     titleandchoices:{
         "& h5": {

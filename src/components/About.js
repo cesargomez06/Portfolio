@@ -10,7 +10,7 @@ const About = ({title, dark, id}) => {
     return (
         <div className={`${classes.section} ${dark && classes.sectiondark}`}>
             <div className={classes.sectioncontent} id={id} > 
-                <Typography variant="h3">{title}</Typography>
+                <Typography variant="h4">{title}</Typography>
                 <Card className={classes.card}>
                     <CardMedia image={perfil} className={classes.media} title="picture"/>
                     <CardContent className={classes.cardcontent}>
