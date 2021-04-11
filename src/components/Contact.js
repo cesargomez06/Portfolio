@@ -1,5 +1,4 @@
 import { Button, makeStyles, Paper, Radio, TextField, Typography } from '@material-ui/core';
-import { CenterFocusStrong } from '@material-ui/icons';
 import React, { useState } from 'react';
 
 const Contact = ({title, dark, id}) => {
