@@ -18,22 +18,22 @@ const Navbar = () => {
     const links =[
         {
             id:"about",
-            text:"About me",
+            text:"Sobre mi",
             icon: <InfoTwoToneIcon fontSize="large"/>
         },
         {
             id:"skills",
-            text:"Skills",
+            text:"Conocimientos",
             icon: <EmojiObjectsTwoToneIcon fontSize="large" className={classes.light}/>
         },
         {
             id:"work",
-            text:"My Work",
+            text:"Mis Trabajos",
             icon: <BuildTwoToneIcon fontSize="large"/>
         },
         {
             id:"contact",
-            text:"Get in touch",
+            text:"Contacto",
             icon: <ContactMailTwoToneIcon fontSize="large"/>
         },
     ];

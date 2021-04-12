@@ -15,27 +15,29 @@ const About = ({title, dark, id}) => {
                     <CardMedia image={perfil} className={classes.media} title="picture"/>
                     <CardContent className={classes.cardcontent}>
                         <TypeWriterEffect 
-                         text="Hi, I am César Gómez"
+                         text="Hola, mi nombre es César Gómez"
                          textStyle={{fontSize:"2rem", fontWeight:"700px", color:"tomato"}}
                          startDelay={100}
                          cursorColor="black"
                          typeSpeed={100}                        
                         />
                         <TypeWriterEffect 
-                         text="And I am an awesome Front End Developer"
+                         text="Soy desarrollador front end, amante de la tecnologia y del diseño desde que tengo recuerdos"
                          textStyle={{fontSize:"1.2rem", fontWeight:"500px"}}
                          startDelay={2500}
                          cursorColor="black"
                          typeSpeed={100}                        
                         />
                         <Typography variant="h6" color="textSecondary">
-                            Text que describe como somos como programadores y lo mucho que vamos a aportar a la empresa que nos contrate..
+                            En programación como en todos los trabajos me gusta brindarme al 100%. Seguir adquiriendo conocimientos
+                            y formandome como profesional. Por este motivo es que el desarrollo web me apasiona, siempre pienso "no existe un techo de conocimientos".
+
                         </Typography>
                     </CardContent>
                     <CardActions>
                         <Button variant="contained" className={classes.pdfbutton}>
                             <a href={pdf} download>
-                                Download Cv
+                                Descargar Cv
                             </a>
                         </Button>
                     </CardActions>
