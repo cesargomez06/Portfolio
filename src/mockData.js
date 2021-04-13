@@ -3,7 +3,7 @@ import bike from "../src/images/bike.png";
 import fotografia from "../src/images/fotografo.png";
 import github from "../src/images/github.png";
 import linkedin from "../src/images/linkedin.png";
-import { GitHub, LinkedIn } from "@material-ui/icons";
+
 
 const mockData = [
     {
