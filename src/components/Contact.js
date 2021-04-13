@@ -16,14 +16,14 @@ const Contact = ({title, dark, id}) => {
                     <div className={classes.titleandchoices}>
                         <Typography variant="h5">Contacto</Typography>
                         <div className={classes.choices}>
-                            <span>Say Hello</span>
+                            <span>Saludarme</span>
                             <Radio 
                                 value="Say Hi"
                                 checked={value === "Say Hi"}
                                 color="primary"
                                 onChange={handleChange}
                             />
-                            <span>Get a Quote</span>
+                            <span>Adquirir mis servicios</span>
                             <Radio 
                                 value="Get a Quote"
                                 checked={value === "Get a Quote"}
@@ -33,19 +33,19 @@ const Contact = ({title, dark, id}) => {
                         </div>
                     </div>
                     <form className={classes.form} noValidate autoComplete="off">
-                        <TextField label="Your name"/>
-                        <TextField label="Your e-mail"/>
+                        <TextField label="Tu nombre"/>
+                        <TextField label="Tu e-mail"/>
                         {
                             value === "Get a Quote" ? (
                                 <>
-                                    <TextField label="Needed Services"/>
-                                    <TextField label="Estimated Budget"/>
+                                    <TextField label="Servicios necesarios"/>
+                                    <TextField label="Presupuesto estimado"/>
                                 </>
                             ) : null
                         }
-                        <TextField label="Write a message"/>                  
+                        <TextField label="Escribe tu mensaje"/>                  
                     </form>
-                    <Button variant="contained"> Submit </Button>
+                    <Button variant="contained"> Enviar </Button>
                 </Paper>
             </div>    
         

@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme)=> ({
     },
     sectioncontent: {
         marginTop:theme.spacing(3),
+        margin:"0 auto",
         "& h4":{
             marginBotttom: theme.spacing(6),
             marginLeft: theme.spacing(3),
